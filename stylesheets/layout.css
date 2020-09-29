@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'PT Sans', sans-serif;
+  margin-bottom: 80px;
 }
 
 a { color: inherit;
@@ -87,4 +88,30 @@ ul {
 
 .last {
   margin-bottom: 80px;
+}
+
+.menubar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 0 20px;
+  border-bottom: .5px solid #aaa;
+  box-shadow: 0 2px 4px rgba(0,0,0,.3);
+
+}
+
+.menubar a {
+  height: 20px;
+  color: #aaa;
+  text-decoration: none;
+
+}
+
+.menubar img {
+  height: 100%;
+  width: auto;
+  margin-top: 0px;
 }
