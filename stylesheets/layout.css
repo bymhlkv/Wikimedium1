@@ -25,7 +25,6 @@ h1, h2, h3 {
 
 
 
-
 h1 + p + p {
   margin-top: 30px;
 }
@@ -62,7 +61,7 @@ blockquote::before {
 
 img {
   display: block;
-  width: 1020px;
+  width: 700px;
   margin: 79px auto 0;
 }
 
