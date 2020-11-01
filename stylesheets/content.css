@@ -10,7 +10,11 @@ article > li {
   font-size: 20px;
   line-height: 34px;
 }
+<<<<<<< HEAD
 article img { display: block; width: 1020px; margin: 79px auto 0;
+=======
+article img { display: block; width: 800px; margin: 79px auto 0;
+>>>>>>> 8e7affb8277dc5c214599d2822505e21adbb30f7
 }
 article img + h2 { margin-top: 79px;
 }
@@ -19,6 +23,7 @@ article img + blockquote,
 article img + ul { margin-top: 77px;
 }
 article h2 + img { margin-top: 82px;
+<<<<<<< HEAD
 }
 article h3 + img { margin-top: 81px;
 }
@@ -58,4 +63,57 @@ article blockquote::before {
   display: block;
   left: -17px;
   top: 0;
+=======
+}
+article h3 + img { margin-top: 81px;
+}
+article ul {
+  list-style-type: disc;
+}
+/* article h1, article h2, article h3, article p, article ul, article blockquote { width: 700px; margin: 0 auto; */
+/* } */
+article h1, article h2, article h3, article h4{ font-family: 'PT Sans Caption', sans-serif; font-weight: bold;
+}
+article h1 { margin-top: 67px; font-size: 38px; line-height: 45px;
+}
+article h1 + p { margin-top: 8px; font-family: 'PT Sans Caption', sans-serif; font-size: 22px; line-height: 32px; color: rgba(0,0,0,.4);
+}
+article h1 + p + p { margin-top: 30px;
+}
+article h2 { margin-top: 43px; font-size: 32px; line-height: 36px; color: rgba(0, 0, 0, .8);
+}
+article h2 + p,
+article h2 + blockquote { margin-top: 7px;
+}
+article h3 { margin-top: 36px; font-size: 28px; line-height: 34px; color: rgba(0, 0, 0, .8);
+}
+article h3 + p,
+article h3 + blockquote { margin-top: 6px;
+}
+
+article blockquote { font-style: italic;
+  position: relative;
+}
+article blockquote::before {
+  content: "";
+  background: black;
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  display: block;
+  left: -17px;
+  top: 0;
+}
+
+article h4 {
+  margin-top: 36px;
+}
+
+article ul {
+  list-style-type: disc;
+  font-size: 20px;
+  line-height: 34px;
+  margin-top: 29px;
+
+>>>>>>> 8e7affb8277dc5c214599d2822505e21adbb30f7
 }
