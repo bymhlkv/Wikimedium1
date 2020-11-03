@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="stylesheets/style.css">
     <script src="javascripts/jquery-3.5.1.js" charset="utf-8"></script>
+    <script src="javascripts/sidebar.js" charset="utf-8"></script>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="icon" type="image/png" href="images/favicon.png" />
 
@@ -18,22 +19,6 @@
     </style>
 
     <title>Хангыль</title>
-
-    <script type="text/javascript">
-    $(function() {
-	$('.sidebar a').each(function() {
-		$(this).on('click', function(e) {
-			e.preventDefault();
-			var scrollTo = $(this).attr('href');
-			var whitespace = scrollTo == '#s1' ? 90 : 30;
-			$('html,body').animate({
-				scrollTop: $(scrollTo).offset().top - whitespace
-			}, 1000);
-		});
-	});
-});
-
-    </script>
 
 
   </head>
@@ -91,7 +76,7 @@
     <p><strong>Хангы́ль</strong> (кор. 한글), <strong>чосонгы́ль</strong> (조선글), <strong>корёгы́ль</strong> (고려글) — фонематическое письмо корейского языка. Постановление
        о новой письменности было издано ваном Сечжоном в 1446 году и называлось Хунмин чоным (훈민정음). Отличительной особенностью хангыля является то, что буквы объединяются в группы,
        примерно соответствующие слогам. Этот вид письменности был разработан в середине XV века и является основным в Южной Корее и единственным в КНДР.
-      
+
       <img src="images/unnamed.jpg" alt="">
 
     <h4 id="s2">Официальные названия</h4>
