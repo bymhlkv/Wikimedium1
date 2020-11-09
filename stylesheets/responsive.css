@@ -23,3 +23,18 @@ body {min-width: 320px;}
 @media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 	.sidebar { display: none; }
 }
+
+
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+	.sidebar {
+	 display: none;}
+	 article > * {
+		 width: calc(100% - 40px);}
+	 article img {
+		 width: 100%; }
+}
