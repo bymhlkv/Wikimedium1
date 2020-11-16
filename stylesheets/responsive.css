@@ -30,11 +30,36 @@ body {min-width: 320px;}
 and (min-device-width : 375px)
 and (max-device-width : 812px)
 and (-webkit-device-pixel-ratio : 3)
-and (orientation : portrait) {
+and (orientation : portrait)
+{
 	.sidebar {
-	 display: none;}
+	 display: none;
+ }
+
 	 article > * {
-		 width: calc(100% - 40px);}
+		 width: calc(100%-40px);
+		 margin-left: 10px;
+	 }
+
+	 h1, h2, h3, h4, blockquote, p {
+		 width: auto;
+
+	 }
+
 	 article img {
-		 width: 100%; }
+		 width: 100%;
+	 }
+
+	.index_item {
+		width: auto;
+	}
+
+	h1, p, img {
+		width: auto;
+	}
+
+	.index_item img {
+		height: 300px;
+		margin-bottom: -50px;
+	}
 }
