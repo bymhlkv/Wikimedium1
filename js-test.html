@@ -4,81 +4,74 @@
     <meta charset="utf-8">
     <title></title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <style media="screen">
-      .box {
-        display: inline-block;
-        width: 200px;
-        height: 200px;
-        background: grey;
-        transition: all .8s;
-      }
-
-      .red {
-        background: red;
-      }
-
-      .blue {
-        background: blue;
-        position: absolute;
-        top: 100px;
-        left: 300px;
-      }
-
-      .black {
-         background: black;
-      }
-
-      .hidden {
-        opacity: 0;
-        /* top: -205px; */
-      }
-
-      .blocker {
-        display: none;
-      }
-
-      .blue.hidden{}
-
-      .rounder {
-        border-radius: 50%;
-      }
-
-    </style>
+    <link rel="stylesheet" href="js-style.css">
 
     <script>
-    $(document).ready(function(){
-	    $(".orange, .blue").click(function(){
 
-        $(".blue.hidden").removeClass("blocker");
+      $(document).ready(function(){
 
-        setTimeout(function (){
-          $(".blue").toggleClass("hidden");
-        }, 1)
+        $(".cube1, .cube9").click(function() {
+          $(".cube1, .cube9").toggleClass("circle");
+          $(".cube1, .cube9").toggleClass("circle1");
+        });
 
-        setTimeout(function (){
-          $(".blue.hidden").addClass("blocker");
-        }, 500)
-    	});
+        $(".cube2, .cube10").click(function() {
+          $(".cube2, .cube10").toggleClass("cube210");
+          $(".cube210").addClass("cube2, cube10");
+        });
 
-      $(".red").click(function() {
+        $(".cube3").click(function() {
+          $(".cube3").addClass("cube37");
+        });
 
-      if ($(".red").hasClass("rounder")) {
-        $(".orange").toggleClass("hidden");
-      }
-      
-      $(this).toggleClass("rounder");
+        $(".cube7").click(function() {
+          $(".cube3").toggleClass("circle2");
+        });
+
+        $(".cube3").click(function() {
+          $(".cube7").toggleClass("cube38");
+        });
+
+        $(".cube4").click(function() {
+          $(".cube3").toggleClass("blocker");
+        });
+
+        $(".cube4").click(function() {
+          $(".cube4").addClass("cube41");
+        });
+
+        $(".cube6").click(function() {
+          $(".cube6").addClass("cube42");
+        });
+
+        $(".cube8").click(function() {
+          $(".cube8, .cube5").toggleClass("cube85");
+        });
+
+
+
 
       });
-      });
+
+
+
+
+
+
     </script>
-
   </head>
 
   <body>
-    <div class="box red"></div>
-    <div class="box blue hidden"></div>
-    <div class="box orange"></div>
+    <div class="cube cube1"></div>
+    <div class="cube cube2"></div>
+    <div class="cube cube3"></div>
+    <div class="cube cube4"></div>
+    <div class="cube cube5"></div>
+    <div class="cube cube6"></div>
+    <div class="cube cube7"></div>
+    <div class="cube cube8"></div>
+    <div class="cube cube9"></div>
+    <div class="cube cube10"></div>
   </body>
 
 </html>
