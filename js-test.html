@@ -6,6 +6,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <link rel="stylesheet" href="js-style.css">
 
     <script>
 
@@ -65,11 +66,14 @@
 //   });
 // });
 
-$( "#cube1" ).draggable();
+$( "#cube1, #cube2, #cube3, #cube4, #cube5, #cube6, #cube7, #cube8, #cube9, #cube10").draggable();
 $( "#cube" ).click(function() {
   console.log('clicked!')
 });
 
+$(function() {
+  $("#cube1, #cube2, #cube3, #cube4, #cube5, #cube6, #cube7, #cube8, #cube9, #cube10").draggable();
+});
 
 
 
