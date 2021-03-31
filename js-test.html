@@ -3,55 +3,72 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="js-style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 
     <script>
 
-      $(document).ready(function(){
+      // $(document).ready(function(){
+      //
+      //   $(".cube1, .cube9").click(function() {
+      //     $(".cube1, .cube9").toggleClass("circle");
+      //     $(".cube1, .cube9").toggleClass("circle1");
+      //   });
+      //
+      //   $(".cube2, .cube10").click(function() {
+      //     $(".cube2, .cube10").toggleClass("cube210");
+      //     $(".cube210").addClass("cube2, cube10");
+      //   });
+      //
+      //   $(".cube3").click(function() {
+      //     $(".cube3").addClass("cube37");
+      //   });
+      //
+      //   $(".cube7").click(function() {
+      //     $(".cube3").toggleClass("circle2");
+      //   });
+      //
+      //   $(".cube3").click(function() {
+      //     $(".cube7").toggleClass("cube38");
+      //   });
+      //
+      //   $(".cube4").click(function() {
+      //     $(".cube3").toggleClass("blocker");
+      //   });
+      //
+      //   $(".cube4").click(function() {
+      //     $(".cube4").addClass("cube41");
+      //   });
+      //
+      //   $(".cube6").click(function() {
+      //     $(".cube6").addClass("cube42");
+      //   });
+      //
+      //   $(".cube8").click(function() {
+      //     $(".cube8, .cube5").toggleClass("cube85");
+      //   });
+      //
+      //
+      //
+      //
+      // });
 
-        $(".cube1, .cube9").click(function() {
-          $(".cube1, .cube9").toggleClass("circle");
-          $(".cube1, .cube9").toggleClass("circle1");
-        });
 
-        $(".cube2, .cube10").click(function() {
-          $(".cube2, .cube10").toggleClass("cube210");
-          $(".cube210").addClass("cube2, cube10");
-        });
+//       $(function () {
+//   let count = 0;
+//   $('.cube.cube1').click(function () {
+//     count += 1;
+//     if (count == 2) {
+//       $(this).removeClass('png');
+//     }
+//   });
+// });
 
-        $(".cube3").click(function() {
-          $(".cube3").addClass("cube37");
-        });
-
-        $(".cube7").click(function() {
-          $(".cube3").toggleClass("circle2");
-        });
-
-        $(".cube3").click(function() {
-          $(".cube7").toggleClass("cube38");
-        });
-
-        $(".cube4").click(function() {
-          $(".cube3").toggleClass("blocker");
-        });
-
-        $(".cube4").click(function() {
-          $(".cube4").addClass("cube41");
-        });
-
-        $(".cube6").click(function() {
-          $(".cube6").addClass("cube42");
-        });
-
-        $(".cube8").click(function() {
-          $(".cube8, .cube5").toggleClass("cube85");
-        });
-
-
-
-
-      });
+$( "#cube1" ).draggable();
+$( "#cube" ).click(function() {
+  console.log('clicked!')
+});
 
 
 
@@ -62,16 +79,16 @@
   </head>
 
   <body>
-    <div class="cube cube1"></div>
-    <div class="cube cube2"></div>
-    <div class="cube cube3"></div>
-    <div class="cube cube4"></div>
-    <div class="cube cube5"></div>
-    <div class="cube cube6"></div>
-    <div class="cube cube7"></div>
-    <div class="cube cube8"></div>
-    <div class="cube cube9"></div>
-    <div class="cube cube10"></div>
+    <div class="cube cube1" id="cube1"></div>
+    <div class="cube cube2" id="cube2"></div>
+    <div class="cube cube3" id="cube3"></div>
+    <div class="cube cube4" id="cube4"></div>
+    <div class="cube cube5" id="cube5"></div>
+    <div class="cube cube6" id="cube6"></div>
+    <div class="cube cube7" id="cube7"></div>
+    <div class="cube cube8" id="cube8"></div>
+    <div class="cube cube9" id="cube9"></div>
+    <div class="cube cube10" id="cube10"></div>
   </body>
 
 </html>
